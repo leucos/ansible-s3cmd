@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  author: Michel Blanc
+  description: 
+  company: devops.works
+  license: MIT
+  min_ansible_version: 1.9
+
+  platforms:
+    - name: Ubuntu
+      versions:
+       - trusty
+    - name: Debian
+      versions:
+        - wheezy
+
+  categories:
+    - cloud
+
+dependencies: []

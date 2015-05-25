@@ -1,0 +1,8 @@
+- name: Installs s3cmd
+  apt: pkg=s3cmd state=latest
+
+- name: Adds s3 credentials
+  template: >
+    src=../templates/s3cfg.j2
+    dest=~{{ s3cmd_user }}/.s3cfg
+    mode=600
