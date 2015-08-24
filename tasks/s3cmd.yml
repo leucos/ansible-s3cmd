@@ -5,4 +5,5 @@
   template: >
     src=../templates/s3cfg.j2
     dest=~{{ s3cmd_user }}/.s3cfg
+    owner={{ s3cmd_user }}
     mode=600
