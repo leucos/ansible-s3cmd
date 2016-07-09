@@ -1,5 +1,10 @@
 - name: Installs s3cmd
-  apt: pkg=s3cmd state=latest
+  apt: 
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - python-magic
+    - s3cmd
 
 - name: Adds s3 credentials
   template: >
